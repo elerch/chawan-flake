@@ -20,7 +20,7 @@
 
       src = pkgs.fetchurl {
         url = "https://git.lerch.org/api/packages/lobo/generic/chawan-appimage/${shorthash}/${appimagename}";
-        hash = "sha256-Egh7SX3nMBXprHNiXwP4sU2sHyp4xOZOizj2DJZQP9I=";
+        hash = "sha256-YfYQqcX2SfpXorg+bM/H7cs4q/A5XW3vYTJKJVFOln4=";
       };
 
       nativeBuildInputs = [ pkgs.makeWrapper ];
