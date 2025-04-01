@@ -10,7 +10,7 @@
     let
       pkgs = import nixpkgs { system = "x86_64-linux"; };
       shorthash = "80e4a90"; # This is the shorthash of the appimage builder repo
-      upstreamShorthash = "a115439"; # This is the shorthash of the Chawan repo itself
+      upstreamShorthash = "10a38a9"; # This is the shorthash of the Chawan repo itself
       appimagename = "Chawan-x86_64-${upstreamShorthash}.AppImage";
       exename = "cha";
     in
@@ -20,7 +20,7 @@
 
       src = pkgs.fetchurl {
         url = "https://git.lerch.org/api/packages/lobo/generic/chawan-appimage/${upstreamShorthash}/${appimagename}";
-        hash = "sha256-WBs34Xuq/kHArCUoWld3FzKU04NELKZ/cmp8FknFGOE=";
+        hash = "sha256-jfj64hQ2C32SMXWIuzogFKo7fRvT2teP/ptTIlA+lO0=";
       };
 
       nativeBuildInputs = [ pkgs.makeWrapper ];
